@@ -5,8 +5,8 @@ if (!MONGO_URI) {
   throw new Error("Not defined");
 }
 
-const DB_NAME = "url-shortener-db";
-export const URL_COLLECTION = "url-collection";
+const DB_NAME = "url-shortener-db"; 
+export const URL_COLLECTION = "links";
 
 let client: MongoClient | null = null;
 let db: Db | null = null;
